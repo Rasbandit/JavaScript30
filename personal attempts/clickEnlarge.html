@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="box"></div>
+
+    <div class=""></div>
+
+    <style media="screen">
+      .box {
+        background-color: pink;
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        transition: 1s all;
+      }
+      .bigger {
+        width: 120px;
+        height: 120px;
+      }
+    </style>
+
+    <script type="text/javascript">
+    let box = document.querySelector('.box');
+
+    box.addEventListener('click', function() {
+      if((this.classList.value.split())[0].includes('bigger')) this.classList.remove('bigger');
+      else this.classList.add('bigger')
+    })
+
+    </script>
+
+  </body>
+</html>
